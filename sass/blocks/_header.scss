@@ -1,0 +1,71 @@
+.header {
+  background-color: #030303;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  @include padding(59px, 0, 58px, 0);
+}
+
+.header__logo-img {
+  width: 199px;
+  height: 33px;
+  vertical-align: middle;
+}
+
+.header__list {
+  width: 775px;
+  @include list-starter-value;
+}
+
+.header__item-link {
+  @include fonts("Roboto", 100, 22px, 26px);
+  color: $link-color;
+  text-decoration: none;
+}
+
+.header__gamburger {
+  display: none;
+}
+
+@include breakpoint-down(1024px) {
+  .header__logo-img {
+    width: 189px;
+    height: 33px;
+  }
+
+  .header__inner {
+    @include padding(49px, 0, 48px, 0);
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__gamburger {
+    display: inline-block;
+  }
+
+  .header__gamburger-img {
+    width: 32px;
+    height: 18px;
+  }
+}
+
+@include breakpoint-down(768px) {
+  .header__inner {
+    @include padding(35px, 0, 34px, 0);
+  }
+}
+
+@include breakpoint-down(420px) {
+  .header__inner {
+    @include padding(35px, 0, 35px, 0);
+  }
+
+  .header__logo-img {
+    width: 131px;
+    height: 20px;
+  }
+}
