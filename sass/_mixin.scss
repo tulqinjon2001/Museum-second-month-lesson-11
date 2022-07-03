@@ -8,11 +8,12 @@
 }
 
 // Mixin for font elements
-@mixin fonts($f-family, $f-weight, $f-size, $l-hieght) {
+@mixin fonts($f-family, $f-weight, $f-size, $l-hieght, $let-spacing) {
   font-family: $f-family;
   font-weight: $f-weight;
   font-size: $f-size;
   line-height: $l-hieght;
+  letter-spacing: $let-spacing;
 }
 
 // Mixin for margin
