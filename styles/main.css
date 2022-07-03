@@ -432,8 +432,14 @@ body {
   font-weight: 100;
   font-size: 22px;
   line-height: 26px;
+  letter-spacing: 2px;
   color: #fff;
   text-decoration: none;
+}
+
+.header__item:hover .header__item-link {
+  color: #9D8665;
+  box-shadow: 0px 2px 0px 0px white;
 }
 
 .header__gamburger {
@@ -468,18 +474,12 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .header__inner {
-    padding-top: 35px;
-    padding-right: 0;
-    padding-bottom: 34px;
-    padding-left: 0;
+    padding: 34px 0 35px;
   }
 }
 @media only screen and (max-width: 420px) {
   .header__inner {
-    padding-top: 35px;
-    padding-right: 0;
-    padding-bottom: 35px;
-    padding-left: 0;
+    padding: 35px 0;
   }
 
   .header__logo-img {
@@ -496,4 +496,220 @@ body {
 
 .logo:hover {
   transform: scale(1.2);
+}
+
+.hero {
+  background-color: #030303;
+}
+
+.hero__inner {
+  background-image: url("./../../images/hero-img.png");
+  background-size: 1000px 750px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.hero__content {
+  padding-top: 150px;
+}
+
+.hero__content-heading {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 25px 0;
+}
+
+.hero__content-text {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 75px 0;
+}
+
+.hero__content-button {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  padding: 25px, 64px;
+  background-color: #710707;
+  border-radius: 10px;
+  border: none;
+}
+
+.hero__content-button:hover {
+  background-color: #9D8665;
+}
+
+.hero__img-slider {
+  width: 600px;
+  height: 120px;
+  margin-top: 160px;
+  display: block;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1280px) {
+  .hero__content-heading {
+    font-family: "Forum";
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 90px;
+    letter-spacing: 5px;
+  }
+
+  .hero__content-text {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin: 0 0 50px;
+  }
+
+  .hero__content-button {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    padding: 19px 45px;
+  }
+
+  .hero__img-slider {
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .hero__inner {
+    background-size: 700px 525px;
+  }
+
+  .hero__content {
+    padding-top: 50px;
+  }
+
+  .hero__img-slider {
+    margin-top: 131px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .hero__inner {
+    background-size: 728px 546px;
+    background-position: center 215px;
+    padding-bottom: 30px;
+  }
+
+  .hero__content {
+    padding-top: 0px;
+    padding-bottom: 505px;
+    text-align: center;
+  }
+
+  .hero__content-heading {
+    font-family: "Forum";
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 5px;
+  }
+
+  .hero__content-text {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    margin: 0 0 50px;
+  }
+
+  .hero__content-button {
+    display: none;
+  }
+
+  .hero__img-slider {
+    margin-top: 70px;
+    margin-right: auto;
+    width: 401px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 748px) {
+  .hero__inner {
+    background-size: 380px 285px;
+    background-position: center 179px;
+    padding-bottom: 20px;
+  }
+
+  .hero__content {
+    padding-bottom: 235px;
+  }
+
+  .hero__content-heading {
+    font-family: "Forum";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+  }
+
+  .hero__content-text {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    margin: 0 0 50px;
+  }
+
+  .hero__img-slider {
+    width: 230px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 419px) {
+  .hero__inner {
+    background-size: 300px 225px;
+    background-position: center 120px;
+    padding-bottom: 20px;
+  }
+
+  .hero__content {
+    padding-bottom: 150px;
+  }
+
+  .hero__content-heading {
+    font-family: "Forum";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+  }
+
+  .hero__content-text {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+  }
+
+  .hero__img-slider {
+    width: 230px;
+    height: 35px;
+  }
 }/*# sourceMappingURL=main.css.map */

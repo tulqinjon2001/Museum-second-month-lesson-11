@@ -20,9 +20,14 @@
 }
 
 .header__item-link {
-  @include fonts("Roboto", 100, 22px, 26px);
+  @include fonts("Roboto", 100, 22px, 26px, 2px);
   color: $link-color;
   text-decoration: none;
+}
+
+.header__item:hover .header__item-link {
+  color: $hover-color;
+  box-shadow: 0px 2px 0px 0px white;
 }
 
 .header__gamburger {
@@ -55,13 +60,13 @@
 
 @include breakpoint-down(768px) {
   .header__inner {
-    @include padding(35px, 0, 34px, 0);
+    padding: 34px 0 35px;
   }
 }
 
 @include breakpoint-down(420px) {
   .header__inner {
-    @include padding(35px, 0, 35px, 0);
+    padding: 35px 0;
   }
 
   .header__logo-img {

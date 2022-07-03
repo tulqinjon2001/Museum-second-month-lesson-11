@@ -1,0 +1,172 @@
+.hero {
+  background-color: #030303;
+}
+
+.hero__inner {
+  background-image: url("./../../images/hero-img.png");
+  background-size: 1000px 750px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.hero__content {
+  padding-top: 150px;
+}
+
+.hero__content-heading {
+  @include fonts('Forum', 400, 80px, 90px, 5px);
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 25px 0;
+}
+
+.hero__content-text {
+  @include fonts('Roboto', 300, 28px, 33px, 2px);
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 75px 0;
+}
+
+.hero__content-button {
+  @include fonts('Roboto', 300, 22px, 26px, 2px);
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  padding: 25px, 64px;
+  background-color: $button-color;
+  border-radius: 10px;
+  border: none;
+}
+
+.hero__content-button:hover {
+  background-color: $hover-color;
+}
+
+.hero__img-slider {
+  width: 600px;
+  height: 120px;
+  margin-top: 160px;
+  display: block;
+  margin-left: auto;
+}
+
+@include breakpoint-down(1280px) {
+  .hero__content-heading {
+    @include fonts('Forum', 400, 64px, 90px, 5px);
+  }
+
+  .hero__content-text {
+    @include fonts('Roboto', 300, 24px, 28px, 2px);
+    margin: 0 0 50px;
+  }
+
+  .hero__content-button {
+    @include fonts('Roboto', 300, 20px, 23px, 2px);
+    padding: 19px 45px;
+  }
+
+  .hero__img-slider {
+    margin-top: 200px;
+  }
+}
+
+@include breakpoint-down(1160px) {
+  .hero__inner {
+    background-size: 700px 525px;
+  }
+
+  .hero__content {
+    padding-top: 50px;
+  }
+
+  .hero__img-slider {
+    margin-top: 131px;
+  }
+}
+
+@include breakpoint-down(999px) {
+  .hero__inner {
+    background-size: 728px 546px;
+    background-position: center 215px;
+    padding-bottom: 30px;
+  }
+
+  .hero__content {
+    padding-top: 0px;
+    padding-bottom: 505px;
+    text-align: center;
+  }
+
+  .hero__content-heading {
+    @include fonts('Forum', 400, 45px, 60px, 5px);
+  }
+
+  .hero__content-text {
+    @include fonts('Roboto', 300, 20px, 23px, 2px);
+    margin: 0 0 50px;
+  }
+
+  .hero__content-button {
+    display: none;
+  }
+
+  .hero__img-slider {
+    margin-top: 70px;
+    margin-right: auto;
+    width: 401px;
+    height: 40px;
+  }
+}
+
+@include breakpoint-down(748px) {
+  .hero__inner {
+    background-size: 380px 285px;
+    background-position: center 179px;
+    padding-bottom: 20px;
+  }
+
+  .hero__content {
+    padding-bottom: 235px;
+  }
+
+  .hero__content-heading {
+    @include fonts('Forum', 400, 28px, 40px, 5px);
+  }
+
+  .hero__content-text {
+    @include fonts('Roboto', 300, 14px, 19px, 2px);
+    margin: 0 0 50px;
+  }
+
+  .hero__img-slider {
+    width: 230px;
+    height: 40px;
+  }
+}
+
+
+@include breakpoint-down(419px) {
+  .hero__inner {
+    background-size: 300px 225px;
+    background-position: center 120px;
+    padding-bottom: 20px;
+  }
+
+  .hero__content {
+    padding-bottom: 150px;
+  }
+
+  .hero__content-heading {
+    @include fonts('Forum', 400, 20px, 23px, 5px);
+    margin-bottom: 20px;
+  }
+
+  .hero__content-text {
+    @include fonts('Roboto', 300, 12px, 14px, 2px);
+  }
+
+  .hero__img-slider {
+    width: 230px;
+    height: 35px;
+  }
+}
