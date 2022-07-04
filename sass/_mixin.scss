@@ -16,22 +16,6 @@
   letter-spacing: $let-spacing;
 }
 
-// Mixin for margin
-@mixin margin($m-top, $m-right, $m-bottom, $m-left) {
-  margin-top: $m-top;
-  margin-right: $m-right;
-  margin-bottom: $m-bottom;
-  margin-left: $m-left;
-}
-
-// Mixin for padding
-@mixin padding($p-top, $p-right, $p-bottom, $p-left) {
-  padding-top: $p-top;
-  padding-right: $p-right;
-  padding-bottom: $p-bottom;
-  padding-left: $p-left;
-}
-
 @mixin breakpoint-down($screen-size) {
   @media only screen and (max-width: $screen-size) {
     @content;

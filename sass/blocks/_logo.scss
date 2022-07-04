@@ -8,3 +8,17 @@
 .logo:hover {
   transform: scale(1.2);
 }
+
+@include breakpoint-down(1024px) {
+  .logo {
+    width: 189px;
+    height: 33px;
+  }
+}
+
+@include breakpoint-down(420px) {
+  .logo {
+    width: 131px;
+    height: 20px;
+  }
+}

@@ -1,3 +1,134 @@
 .footer {
   background-color: $bg-color;
 }
+
+.footer__inner {
+  padding-top: 84px;
+  padding-bottom: 52px;
+}
+
+.footer__logo-leg {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  display: block;
+}
+
+.footer__logo-img {
+  width: 199px;
+  height: 50px;
+}
+
+.footer__left-menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__left-menu-item {
+  margin-top: 25px;
+}
+
+.footer__left-menu-item:nth-child(1) {
+  margin-top: 0;
+}
+
+.footer__left-menu-item-link {
+  @include fonts('Roboto', 100, 22px, 26px, 2px);
+  color: white;
+  text-decoration: none;
+}
+
+.footer__right-menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__right-menu-item {
+  margin-top: 25px;
+}
+
+.footer__right-menu-item:nth-child(1) {
+  margin-top: 0;
+}
+
+.footer__right-menu-item-link {
+  @include fonts('Roboto', 100, 22px, 26px, 2px);
+  color: white;
+  text-decoration: none;
+}
+
+.footer__right-menu-item:hover .footer__right-menu-item-link {
+  color: $hover-color;
+}
+
+.footer__icon-list {
+  display: flex;
+  margin-top: auto;
+}
+
+.footer__icon-item {
+  margin-left: 25px;
+  transition: transform 0.3s ease;
+}
+
+.footer__icon-item:hover {
+  transform: scale(1.05);
+}
+
+.footer__icon-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.footer__icon-item-img {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__h-line {
+  height: 3px;
+  background: #666666;
+  border: none;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+
+.footer__bottom-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__bottom-item {
+  @include fonts('Roboto', 100, 22px, 22px, 2px);
+  color: #fff;
+}
+
+@include breakpoint-down(900px) {
+  .footer__logo {
+    margin-right: auto;
+  }
+
+  .footer__logo-leg {
+    flex-direction: column;
+  }
+
+  .footer__left-menu-list {
+    display: flex;
+  }
+}
+
+@include breakpoint-down(600px) {
+  .footer__logo {
+    margin-right: auto;
+  }
