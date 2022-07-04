@@ -1039,12 +1039,11 @@ body {
 
   .footer__logo-leg {
     flex-direction: column;
-    align-items: center;
   }
 
   .footer__left-menu-list {
     flex-direction: row;
-    width: 350px;
+    width: 100%;
     justify-content: space-between;
     margin-top: 40px;
   }
@@ -1055,7 +1054,7 @@ body {
 
   .footer__right-menu-list {
     flex-direction: row;
-    width: 350px;
+    width: 100%;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -1064,15 +1063,20 @@ body {
   .footer__right-menu-item {
     margin-top: 0;
   }
+
+  .footer__icon-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .footer__left-menu-list {
-    width: 300px;
+    width: 100%;
   }
 
   .footer__right-menu-list {
-    width: 300px;
+    width: 100%;
   }
 
   .footer__icon-item {
