@@ -904,6 +904,164 @@ body {
     line-height: 19px;
   }
 }
+
+/* Main explore */
+
+.explore {
+  background-color: #030303;
+}
+
+.explore__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 0;
+}
+
+.explore__content {
+  max-width: 660px;
+}
+
+.explore__content-heading {
+  font-family: 'Forum';
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+
+.explore__content-h-line {
+  height: 3px;
+  background: #710707;
+  border-radius: 0px;
+  border: none;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.explore__content-text {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #fff;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.explore__content-text-span {
+  color: #9d8665;
+}
+
+.explore__img {
+  max-width: 720px;
+  max-height: 700px;
+  margin-left: 15px;
+}
+
+/* Explore Responsive */
+
+@media only screen and (max-width: 1162px) {
+  .explore__content-heading {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  
+  .explore__content-text {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (max-width: 1041px) {
+  .explore__inner {
+    flex-direction: column;
+    padding: 60px 0;
+  }
+
+  .explore__content {
+    max-width: 100%;
+  }
+
+  .explore__content-heading {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  .explore__content-h-line {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  
+  
+  .explore__content-text {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0;
+  }
+
+  .explore__content-text:nth-last-child(1) {
+    display: none;
+  }
+
+  .explore__img {
+    margin: 0;
+    margin-top: 62px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .explore__inner {
+    padding: 40px 0;
+  }
+
+  .explore__content-heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .explore__content-h-line {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  
+  .explore__content-text {
+    display: none;
+  }
+
+  .explore__img {
+    width: 400px;
+    height: 390px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .explore__content-heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .explore__img {
+    width: 300px;
+    height: 295px;
+  }
+}
+
+
+
+
+
+
+
+
+
 .footer {
   background-color: rgb(3, 3, 3);
 }
