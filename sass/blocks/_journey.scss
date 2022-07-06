@@ -1,3 +1,209 @@
+/* Journey */
+
 .journey {
-  background-color: white;
+  background-color: #dbdbdb;
+}
+
+.journey__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.journey__heading {
+  font-family: 'Forum';
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+  margin: 0;
+}
+
+.journey__text {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  margin: 0;
+  max-width: 720px;
+}
+
+.journey__bienvenue-video {
+  margin-top: 75px;
+  width: 100%;
+  height: 650px;
+}
+
+.journey__bienvenue-video-under {
+  width: 100%;
+  height: 85px;
+}
+
+.journey__exponention-list {
+  width: 100%;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.journey__exponention-video {
+  width: 452px;
+  height: 254px;
+}
+
+.journey__video-slider-pagination {
+  width: 200px;
+  height: 12px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  .journey__heading {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  
+  .journey__text {
+    display: none;
+  }
+
+  .journey__bienvenue-video {
+    margin-top: 40px;
+    width: 100%;
+    height: 444px;
+  }
+  
+  .journey__bienvenue-video-under {
+    width: 100%;
+    height: 60px;
+  }
+  
+  
+  .journey__exponention-video {
+    width: 300px;
+    height: 170px;
+  }
+
+  .journey__video-slider-pagination {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .journey__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .journey__heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .journey__bienvenue-video {
+    margin-top: 20px;
+    width: 100%;
+    height: 329px;
+  }
+  
+  .journey__bienvenue-video-under {
+    width: 100%;
+    height: 53px;
+  }
+  
+  .journey__exponention-item:nth-last-child(1) {
+    display: none;
+  }
+
+  .journey__exponention-video {
+    width: 354px;
+    height: 199px;
+  }
+
+  .journey__video-slider-pagination {
+    width: 190px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .journey__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .journey__heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .journey__bienvenue-video {
+    margin-top: 20px;
+    width: 100%;
+    height: 172px;
+  }
+  
+  .journey__bienvenue-video-under {
+    width: 100%;
+    height: 50px;
+  }
+
+  .journey__exponention-list {
+    justify-content: space-around;
+  }
+
+  .journey__exponention-video {
+    width: 180px;
+    height: 101px;
+  }
+
+  .journey__video-slider-pagination {
+    width: 174px;
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .journey__inner {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .journey__heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .journey__bienvenue-video {
+    margin-top: 16px;
+    width: 100%;
+    height: 160px;
+  }
+  
+  .journey__bienvenue-video-under {
+    width: 100%;
+    height: 36px;
+  }
+
+  .journey__exponention-list {
+    justify-content: space-around;
+  }
+
+  .journey__exponention-video {
+    width: 140px;
+    height: 90px;
+  }
+
+  .journey__video-slider-pagination {
+    width: 130px;
+    height: 6px;
+  }
 }
